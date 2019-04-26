@@ -13,12 +13,12 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="GET">
+  <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="POST">
     <fieldset>
       <legend>Personal information</legend>
       <label>Surname: <input type="text" name="lastName" autocomplete="off" required></label>
       <label>Name: <input type="text" name="firstName" autocomplete="off" minlength="4"></label>
-      <label>How old are You? <input type="text" name="number" value="12" autocomplete="off" data-qa="field-value" maxlength="2"></label>
+      <label>How old are You? <input type="number" name="number" value="12" autocomplete="off" data-qa="field-value" maxlength="2"></label>
       <label>Full date of birthday: <input type="date" name="birthdayOfUser"></label>
       <label>I accept the term of the agreement <input type="checkbox" name="valid" required></label>
     </fieldset>
