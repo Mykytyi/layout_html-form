@@ -1,14 +1,21 @@
 label {
-  display: inline-block;
-  margin-top: 10px;
+  display: block;
+}
+
+.animalPrefer {
+  display: block;
 }
 
 fieldset {
   margin-bottom: 20px;
 }
 
-fieldset label:first-of-type {
-  margin-top: 0;
+fieldset label {
+  margin-bottom: 10px;
+}
+
+fieldset label:last-child {
+  margin-bottom: 0;
 }
 
 .labelAnsNo {
@@ -16,10 +23,14 @@ fieldset label:first-of-type {
 }
 
 .range {
-  margin: 10px 0 0;
+  margin-top: 10px;
 }
 
 p {
   display: inline-block;
   margin: 0;
+}
+
+.animalPrefer *:not(p) {
+  display: inline-block;
 }
